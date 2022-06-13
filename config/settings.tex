@@ -1,0 +1,56 @@
+
+\newcommand{\hsp}{\hspace{20pt}}
+
+% blue from the logo
+\definecolor{mpblue}{HTML}{005E9E}
+
+% Set indentation
+\setlength\parindent{0pt}
+
+% Custom title commands
+\titleformat{\chapter}
+{\color{mpblue}\normalfont\huge\bfseries}
+{\color{mpblue}\thechapter.}{1em}{}
+\titlespacing*{\chapter}
+{0pt}{3.3ex}{3.3ex}
+
+\titleformat{\section}
+{\color{mpblue}\normalfont\Large\bfseries}
+{\color{mpblue}\thesection.}{1em}{}
+\titlespacing*{\section}
+{0pt}{3.3ex}{3.3ex}
+
+\titleformat{\subsection}
+{\color{mpblue}\normalfont\large\bfseries}
+{\color{mpblue}\thesubsection.}{1em}{}
+\titlespacing*{\subsection}
+{0pt}{3.3ex}{3.3ex}
+
+% Custom headers and footers
+\pagestyle{plain}
+
+% maths theorem fields and derivates
+
+\declaretheoremstyle[
+  headfont=\color{mpblue}\normalfont\bfseries,
+  bodyfont=\color{black}\normalfont\itshape,
+]{colored}
+
+\theoremstyle{colored}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{definition}{Definition}[section] 
+\newtheorem{lemma}{Lemma}[section] 
+
+% Usefull math operators
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\argmin}{arg\,min}
+\DeclareMathOperator{\argmax}{arg\,max}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\sign}{sign}
+
+
+% Fields for title page
+
+
+
