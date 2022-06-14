@@ -51,6 +51,40 @@
 
 
 % Fields for title page
+\makeatletter
+\newcommand\subtitle[1]{\renewcommand\@subtitle{no subtitle}}
+\newcommand\@subtitle{}
+\makeatother
+
+\makeatletter
+\newcommand\keywords[1]{\renewcommand\@keywords{no keywords}}
+\newcommand\@keywords{}
+\makeatother
+
+\makeatletter
+\newcommand\logo[1]{\renewcommand\@logo{}}
+\newcommand\@logo{}
+\makeatother
 
 
-
+%maketile
+\makeatletter
+\renewcommand{\maketitle}{
+    {\vspace*{2.8cm}}
+    {\centering}
+    {\LARGE } 
+    {\textbf{\@title}}
+    
+    {\vspace*{0.25cm}}
+    {\large }
+    {\textbf{\@subtitle}}
+    
+    {\vspace{3cm}}
+    {\large}
+    {Author: \@author}
+    
+    {\vspace{2cm}}
+    {\large} 
+    {\@date}
+}
+\makeatother
