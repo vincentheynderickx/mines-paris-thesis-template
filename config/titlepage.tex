@@ -6,9 +6,9 @@
         \begin{figure}[!htb]
           \centering
            \begin{minipage}{0.42\textwidth}
-             \centering
-             \makeatletter
-             \includegraphics[width=\linewidth]{../figs/logo/mines.png}
+             \centering       
+             \makeatletter      
+             \includegraphics[width=\linewidth]{\@logo}
              \makeatother
            \end{minipage}\hfill
         \end{figure}
@@ -23,8 +23,17 @@
         \vspace{5.5cm}
         \normalsize
         Conducted under the supervision of: \\
-            Your stuff
-        
+        \vspace{0.5cm}
+        \centering
+        \makeatletter
+        \begin{tabular}{l c l}
+        \hspace{1.2cm}  \@firstsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\
+        \hspace{1.2cm}  \@secondsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole\\
+        \hspace{1.2cm}  \@thirdsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@thirdsupervisorrole\\
+        \hspace{1.2cm}  \@fourthsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@fourthsupervisorrole\\
+        \hspace{1.2cm}  \@fifthsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@fifthsupervisorrole\\
+        \end{tabular}
+        \makeatother
         
     \end{center}
 \end{titlepage}

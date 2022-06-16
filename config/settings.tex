@@ -52,18 +52,71 @@
 
 % Fields for title page
 \makeatletter
-\newcommand\subtitle[1]{\renewcommand\@subtitle{no subtitle}}
+\newcommand\subtitle[1]{\renewcommand\@subtitle{#1}}
 \newcommand\@subtitle{}
 \makeatother
 
 \makeatletter
-\newcommand\keywords[1]{\renewcommand\@keywords{no keywords}}
+\newcommand\keywords[1]{\renewcommand\@keywords{#1}}
 \newcommand\@keywords{}
 \makeatother
 
 \makeatletter
-\newcommand\logo[1]{\renewcommand\@logo{}}
+\newcommand\logo[1]{\renewcommand\@logo{#1}}
 \newcommand\@logo{}
+\makeatother
+
+
+% supervisors and roles
+\makeatletter
+\newcommand\firstsupervisor[1]{\renewcommand\@firstsupervisor{#1}}
+\newcommand\@firstsupervisor{}
+\makeatother
+
+\makeatletter
+\newcommand\secondsupervisor[1]{\renewcommand\@secondsupervisor{#1}}
+\newcommand\@secondsupervisor{}
+\makeatother
+
+\makeatletter
+\newcommand\thirdsupervisor[1]{\renewcommand\@thirdsupervisor{#1}}
+\newcommand\@thirdsupervisor{}
+\makeatother
+
+\makeatletter
+\newcommand\fourthsupervisor[1]{\renewcommand\@fourthsupervisor{#1}}
+\newcommand\@fourthsupervisor{}
+\makeatother
+
+\makeatletter
+\newcommand\fifthsupervisor[1]{\renewcommand\@fifthsupervisor{#1}}
+\newcommand\@fifthsupervisor{}
+\makeatother
+
+
+\makeatletter
+\newcommand\firstsupervisorrole[1]{\renewcommand\@firstsupervisorrole{#1}}
+\newcommand\@firstsupervisorrole{}
+\makeatother
+
+\makeatletter
+\newcommand\secondsupervisorrole[1]{\renewcommand\@secondsupervisorrole{#1}}
+\newcommand\@secondsupervisorrole{}
+\makeatother
+
+\makeatletter
+\newcommand\thirdsupervisorrole[1]{\renewcommand\@thirdsupervisorrole{#1}}
+\newcommand\@thirdsupervisorrole{}
+\makeatother
+
+\makeatletter
+\newcommand\fourthsupervisorrole[1]{\renewcommand\@fourthsupervisorrole{#1}}
+\newcommand\@fourthsupervisorrole{}
+\makeatother
+
+\makeatletter
+\newcommand\fifthsupervisorrole[1]{\renewcommand\@fifthsupervisorrole{#1}}
+\newcommand\@fifthsupervisorrole{}
 \makeatother
 
 
@@ -72,19 +125,15 @@
 \renewcommand{\maketitle}{
     {\vspace*{2.8cm}}
     {\centering}
-    {\LARGE } 
-    {\textbf{\@title}}
+    {\LARGE{\textbf{\@title}}}
     
     {\vspace*{0.25cm}}
-    {\large }
-    {\textbf{\@subtitle}}
+    {\large {\textbf{\@subtitle}}}
     
     {\vspace{3cm}}
-    {\large}
-    {Author: \@author}
+    {\large{Author: \@author}}
     
     {\vspace{2cm}}
-    {\large} 
-    {\@date}
+    {\large{\@date}}
 }
 \makeatother
