@@ -9,12 +9,12 @@
               \centering       
               \includegraphics[width=\linewidth]{\@logo}
            \end{minipage}\hfill
-           \IfFileExists{\@secondlogo}{
-           \begin{minipage}{0.42\textwidth}
-              \centering           
-              \includegraphics[width=\linewidth]{\@logo}
-          \end{minipage}\hfill }
         \end{figure}
+      \makeatother
+
+        \makeatletter
+          \centering       
+          \includegraphicsifexists{width=0.42\linewidth}{\@secondlogo}
         \makeatother
 
         \maketitle
@@ -33,8 +33,8 @@
         \centering
         \makeatletter
         \begin{tabular}{l c l}
-        \hspace{0.5cm}  \@firstsupervisor   \@secondlogo    & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\
-        \hspace{0.5cm}  \@secondsupervisor   \IfFileExists{#2}{bzreb}   & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole\\
+        \hspace{0.5cm}  \@firstsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\
+        \hspace{0.5cm}  \@secondsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole\\
         \hspace{0.5cm}  \@thirdsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@thirdsupervisorrole\\
         \hspace{0.5cm}  \@fourthsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@fourthsupervisorrole\\
         \hspace{0.5cm}  \@fifthsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@fifthsupervisorrole\\
