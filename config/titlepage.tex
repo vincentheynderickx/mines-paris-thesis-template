@@ -2,36 +2,42 @@
 
 \begin{titlepage}
     \begin{center}
-    
+      \makeatletter 
         \begin{figure}[!htb]
           \centering
            \begin{minipage}{0.42\textwidth}
-             \centering       
-             \makeatletter      
-             \includegraphics[width=\linewidth]{\@logo}
-             \makeatother
+              \centering       
+              \includegraphics[width=\linewidth]{\@logo}
            \end{minipage}\hfill
+           \IfFileExists{\@secondlogo}{
+           \begin{minipage}{0.42\textwidth}
+              \centering           
+              \includegraphics[width=\linewidth]{\@logo}
+          \end{minipage}\hfill }
         \end{figure}
+        \makeatother
 
         \maketitle
 
         \vspace{2cm}
         \large 
-        Keywords:\\
-        Deep Learning, Blockhain, Agile, Data Analytics
+        \textbf{Keywords}:\\
+        \makeatletter
+        \textbf{\@keywords}
+        \makeatother
         
-        \vspace{5.5cm}
+        \vspace*{\fill}
         \normalsize
         Conducted under the supervision of: \\
         \vspace{0.5cm}
         \centering
         \makeatletter
         \begin{tabular}{l c l}
-        \hspace{1.2cm}  \@firstsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\
-        \hspace{1.2cm}  \@secondsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole\\
-        \hspace{1.2cm}  \@thirdsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@thirdsupervisorrole\\
-        \hspace{1.2cm}  \@fourthsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@fourthsupervisorrole\\
-        \hspace{1.2cm}  \@fifthsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@fifthsupervisorrole\\
+        \hspace{0.5cm}  \@firstsupervisor   \@secondlogo    & \hspace{0.25cm}-\hspace{0.25cm} &  \@firstsupervisorrole \\
+        \hspace{0.5cm}  \@secondsupervisor   \IfFileExists{#2}{bzreb}   & \hspace{0.25cm}-\hspace{0.25cm} &  \@secondsupervisorrole\\
+        \hspace{0.5cm}  \@thirdsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@thirdsupervisorrole\\
+        \hspace{0.5cm}  \@fourthsupervisor      & \hspace{0.25cm}-\hspace{0.25cm} &  \@fourthsupervisorrole\\
+        \hspace{0.5cm}  \@fifthsupervisor       & \hspace{0.25cm}-\hspace{0.25cm} &  \@fifthsupervisorrole\\
         \end{tabular}
         \makeatother
         

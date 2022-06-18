@@ -68,6 +68,12 @@
 \newcommand\@logo{}
 \makeatother
 
+\makeatletter
+\newcommand\secondlogo[1]{\renewcommand\@secondlogo{#1}}
+\newcommand\@secondlogo{None}
+\makeatother
+
+\newcommand\includegraphicsifexists[2]{\IfFileExists{#2}{\includegraphics[#1]{#2}}}
 
 % supervisors and roles
 \makeatletter
@@ -133,9 +139,9 @@
     {\large {\textbf{\@subtitle}}}
     
     {\vspace{3cm}}
-    {\large{Author: \@author}}
+    {\large{\textbf{Author: \@author}}}
     
     {\vspace{2cm}}
-    {\large{\@date}}
+    {\large{\textbf{\@date}}}
 }
 \makeatother
