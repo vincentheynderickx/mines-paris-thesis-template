@@ -20,6 +20,8 @@
 \usepackage{wrapfig}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{titlesec, color}
+\usepackage{ifthen}
+\usepackage{etoolbox}
 
 %\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{black}{|}\hsp}{0pt}{\Huge\bfseries}
 %\titlespacing{\chapter}{0pt}{-25pt}{1cm}
@@ -38,9 +40,9 @@
 
 %logo
 \logo{figs/logo/mines.png}
-\secondlogo{figs/logo/mines.png}
+%\secondlogo{figs/logo/su.png}  % optional field
 
-%supervisors
+%supervisors - each one of these fields are optional
 \firstsupervisor{prof 1}
 \firstsupervisorrole{affiliation prof 1}
 
