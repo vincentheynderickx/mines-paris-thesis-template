@@ -28,8 +28,8 @@
 
 
 %title
-\title{your title here}
-\subtitle{your subtitle array}
+\title{Your Title Here}
+\subtitle{Your Subtitle}
 \author{your name}
 \date{\today}
 
@@ -65,7 +65,7 @@
 \newgeometry{width=140mm,top=40mm,bottom=40mm}
 
 \chapter*{Acknowledgements}
-\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\noindent Lorem ipsum dolor sit amet, piche consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -128,6 +128,32 @@ Itaque earum rerum hic tenetur a sapiente delectus
 Itaque earum rerum hic tenetur a sapiente delectus
 \end{proof}
 
+\subsection{Equations}
+
+A simple equation:
+\begin{equation}
+    e = mc^2
+\end{equation}
+
+A split equation:
+\begin{equation}
+    \begin{split}
+        \mathbb{E}(aX + Y) &= \mathbb{E}(aX) + \mathbb{Y}\\
+                           &= a\mathbb{E}(X) + \mathbb{Y}
+    \end{split}
+\end{equation}
+
+An equation with cases:
+\begin{equation}
+    u_n =
+    \begin{cases}
+        1 \text{ if } n\%2=0 \\
+        0 \text{ if } n\%2=1 \\
+    \end{cases}
+\end{equation}
+
+
+
 \chapter{Your thesis}\label{chp:stuff}
 Morbi tristique dapibus lacus nec finibus. 
 Donec sagittis elit varius ipsum tincidunt, nec semper odio mollis. 
@@ -136,7 +162,10 @@ Cras non venenatis enim, et feugiat tortor.
 Sed imperdiet nisl a quam aliquet accumsan.
 Nullam consectetur purus nibh, ac posuere ante tempus a. 
 Proin magna urna, commodo vitae placerat vitae, interdum a purus. 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+\bibliographystyle{ieeetr}  
+\bibliography{sources}
 
 \appendix
 \chapter{Your appendix}\label{apx:morestuff}
@@ -153,10 +182,4 @@ Proin sit amet ornare nunc, eget faucibus odio.
 Pellentesque pretium ac ante pharetra efficitur. 
 Ut semper ipsum sed nisl finibus bibendum. Donec lobortis sagittis ex, in pretium est feugiat vitae. 
 
-
-\bibliographystyle{ieeetr}  
-\bibliography{sources}
-
 \end{document}
-
-
