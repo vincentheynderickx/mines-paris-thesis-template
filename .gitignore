@@ -7,3 +7,6 @@ main.fls
 main.out
 main.log
 main.toc
+.DS_Store
+figs/.DS_Store
+indent.log
